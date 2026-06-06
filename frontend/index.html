@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIC Club Messenger</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/4b8b4d1d3a.js" crossorigin="anonymous"></script>
+
+    <!-- Socket -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+    <div class="bg-glow"></div>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+
+            <div class="logo">
+                🚀 NIC Messenger
+            </div>
+
+            <div class="server-status">
+                <span class="online-dot"></span>
+                NIC Club Community Online
+            </div>
+
+            <div class="channels">
+
+                <div class="channel active" data-channel="tech">
+                    💻 Tech Chat
+                </div>
+
+                <div class="channel" data-channel="media">
+                    🎬 Media Chat
+                </div>
+
+                <div class="channel" data-channel="content">
+                    ✍️ Content Chat
+                </div>
+
+                <div class="channel" data-channel="design">
+                    🎨 Design Chat
+                </div>
+
+                <div class="channel" data-channel="community">
+                    🌍 Community Chat
+                </div>
+
+                <div class="channel" data-channel="hackathon">
+                    ⚡ Hackathon Chat
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="sidebar-footer">
+                Built with ❤️ by NIC Club
+            </div>
+
+        </div>
+
+        <!-- MAIN CHAT -->
+        <div class="chat-container">
+
+            <!-- Header -->
+            <div class="chat-header">
+
+                <div>
+                    <h2 id="channel-title">
+                        # Tech Chat
+                    </h2>
+
+                    <p class="header-subtitle">
+                        Collaborate • Innovate • Communicate
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                Welcome to NIC Club Messenger 🚀
+                <span>
+                    Connect, chat, share ideas, and build amazing things together.
+                </span>
+            </div>
+
+            <!-- Messages -->
+            <div class="messages" id="messages">
+
+            </div>
+
+            <!-- Input -->
+            <div class="message-input">
+
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+
+                <button id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send
+                </button>
+
+            </div>
+
+            <!-- Bottom Tagline -->
+            <div class="bottom-tagline">
+                NIC Club Messenger • Empowering Innovation Through Communication 🚀
+            </div>
+
+        </div>
+
+    </div>
+<div class="pinned-section"> <h3>📌 Pinned Messages</h3> <div id="pinnedMessages"></div> </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
